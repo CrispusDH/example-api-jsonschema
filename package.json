@@ -1,0 +1,26 @@
+{
+  "name": "base-api-project",
+  "description": "Base project for API testing using AVA, typescript and superagent",
+  "author": "Oleksii Ihnatiuk",
+  "devDependencies": {
+    "cross-env": "5.2.0",
+    "typescript": "3.2.2",
+    "superagent": "4.1.0",
+    "@types/node": "10.12.18",
+    "@types/request": "2.48.1",
+    "@types/superagent": "3.8.5",
+    "tslint": "5.12.0",
+    "tslint-eslint-rules": "5.4.0",
+    "ava": "1.0.1"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "ava": "ava",
+    "clean": "rm -rf dist",
+    "pretest": "npm run build",
+    "test": "npm run ava",
+    "lint": "tslint 'src/**/*.ts' 'test/**/*.ts'",
+    "prebuild": "npm run clean",
+    "build": "npm run lint && npm run tsc"
+  }
+}
