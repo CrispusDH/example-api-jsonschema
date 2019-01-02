@@ -10,7 +10,7 @@ export abstract class Requester {
 
   protected constructor(endpoint: string) {
     this.headers = Constants.defaultHeaders;
-    this.url = `${Constants.baseUrl}/${Constants.resourceName}${endpoint}`;
+    this.url = `${Constants.baseUrl}${Constants.resourceName}${endpoint}`;
     this.body = {};
     this.queries = '';
   }

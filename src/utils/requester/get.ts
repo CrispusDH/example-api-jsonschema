@@ -1,7 +1,7 @@
 import * as request from 'superagent';
 import { Requester } from './requester';
 import { HTTPMethods, ResponseWithBody } from './types';
-import {Constants} from "../constants";
+import { Constants } from '../constants';
 
 export class Get extends Requester implements HTTPMethods {
   constructor(endpoint) {
