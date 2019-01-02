@@ -1,5 +1,5 @@
 export const Constants = {
-  baseUrl: 'https://stg.lottosheli.co.il', // example: https://stg.mysite.com
+  baseUrl: 'http://localhost:3000/', // example: https://stg.mysite.com/
   resourceName: '', // example: api/v1
   defaultHeaders: {
     'Content-Type': 'application/json'
