@@ -1,6 +1,6 @@
 {
-  "name": "base-api-project",
-  "description": "Base project for API testing using AVA, typescript and superagent",
+  "name": "example-api-project",
+  "description": "Example project for API testing using AVA, typescript and superagent",
   "author": "Oleksii Ihnatiuk",
   "devDependencies": {
     "cross-env": "5.2.0",
