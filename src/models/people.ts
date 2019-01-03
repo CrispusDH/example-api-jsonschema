@@ -1,13 +1,13 @@
 export interface PersonM {
-  id: number;
-  first_name: string;
-  last_name: string;
-  job: string;
-  school: SchoolM;
+  readonly id: number;
+  readonly first_name: string;
+  readonly last_name: string;
+  readonly job: string;
+  readonly school: SchoolM;
 }
 
 export interface SchoolM {
-  county: string;
-  city: string;
-  state_zip: string;
+  readonly country: string;
+  readonly city: string;
+  readonly state_zip: string;
 }

@@ -20,7 +20,7 @@
     "tsc": "tsc",
     "ava": "ava",
     "clean": "rm -rf dist",
-    "jsonserver:up": "json-server ./db/generate.js",
+    "jsonserver:up": "json-server ./db/generate.js &",
     "jsonserver:down": "lsof -ti tcp:3000 | xargs kill",
     "pretest": "npm run build && npm run jsonserver:up",
     "test": "npm run ava && npm run aftertest || npm run aftertest",
@@ -28,5 +28,12 @@
     "lint": "tslint 'src/**/*.ts' 'test/**/*.ts' 'db/**/*.ts'",
     "prebuild": "npm run clean",
     "build": "npm run lint && npm run tsc"
+  },
+  "ava": {
+    "files": [
+      "dist/test/**/*.js"
+    ],
+    "verbose": true,
+    "failWithoutAssertions": false
   }
 }
