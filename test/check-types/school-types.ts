@@ -1,8 +1,8 @@
 import anyTest, { TestInterface } from 'ava';
-import { PeopleService } from '../src/services/people-service';
-import { checkPropertyType } from '../src/utils/check-property/check-property';
-import { BasicTypes } from '../src/utils/check-property/basic-types';
-import { School } from '../src/entities/school';
+import { PeopleService } from '../../src/services/people-service';
+import { checkPropertyType } from '../../src/utils/check-property/check-property';
+import { BasicTypes } from '../../src/utils/check-property/basic-types';
+import { School } from '../../src/entities/school';
 
 const test = anyTest as TestInterface<{
   school: School
