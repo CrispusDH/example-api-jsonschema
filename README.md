@@ -1,3 +1,7 @@
+## How to run tests
+- install all dependencies: `npm i`
+- run tests: `npm run test`
+
 ## How looks like DB?
 Each time the DB generated with new unique data. For this purpose I use `json-server` and
 `faker` libraries. You could take a look at `./db` folder. Example of generated DB:
@@ -55,10 +59,13 @@ Each time the DB generated with new unique data. For this purpose I use `json-se
 }
 ```
 ## Models
-I create interfaces that cover response's data in `body`. So, when I will work with it in a test I will have autocomplete and general understanding structure of response.
+I create interfaces that cover response's data in `body`. So, when I will work with it I will have autocomplete and general understanding structure of response.
 You could find them in the `./models` folder.
 ## Services
 It is a kind of wrapper under requests. Making them more user friendly. So, here:
 - group up requests by some logic
 - wrap request in human readable methods
 You could find it in `./services` folder
+## Entities
+If your tests will work with Guest user or Registered user or something like this it would be better to create specific **entities**.
+Them will implement corresponding models and will have logic that uses some **services**.

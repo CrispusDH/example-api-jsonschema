@@ -1,9 +1,9 @@
-import { Person } from '../src/entities/person';
+import { Person } from '../../src/entities/person';
 import anyTest, { TestInterface } from 'ava';
-import { PeopleService } from '../src/services/people-service';
-import { ResponseWithBody } from '../src/utils/requester/types';
-import { checkPropertyType } from '../src/utils/check-property/check-property';
-import { BasicTypes } from '../src/utils/check-property/basic-types';
+import { PeopleService } from '../../src/services/people-service';
+import { ResponseWithBody } from '../../src/utils/requester/types';
+import { checkPropertyType } from '../../src/utils/check-property/check-property';
+import { BasicTypes } from '../../src/utils/check-property/basic-types';
 
 const test = anyTest as TestInterface<{
   response: ResponseWithBody<Array<Person>>,
