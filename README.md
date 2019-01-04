@@ -1,3 +1,7 @@
+## How to run tests
+- install all dependencies: `npm i`
+- run tests: `npm run test`
+
 ## How looks like DB?
 Each time the DB generated with new unique data. For this purpose I use `json-server` and
 `faker` libraries. You could take a look at `./db` folder. Example of generated DB:
