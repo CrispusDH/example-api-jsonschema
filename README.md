@@ -71,3 +71,4 @@ If your tests will work with Guest user or Registered user or something like thi
 Them will implement corresponding models and will have logic that uses some **services**.
 ## Schema
 Here I keep `JSON Schema` for response. In this way it is very easy to check response body with corresponding schema.
+[This site](https://www.jsonschema.net/) helps to generate initial schema from response body, after it you could remove extra lines.
