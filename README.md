@@ -69,3 +69,5 @@ You could find it in `./services` folder
 ## Entities
 If your tests will work with Guest user or Registered user or something like this it would be better to create specific **entities**.
 Them will implement corresponding models and will have logic that uses some **services**.
+## Schema
+Here I keep `JSON Schema` for response. In this way it is very easy to check response body with corresponding schema.
